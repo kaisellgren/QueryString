@@ -22,9 +22,11 @@ void main() {
 
 Until ```pub``` is open to public submissions, you have to specify the path to this Git repository in your pubspec.yaml:
 
+```
 dependencies:
   query_string:
   	git: https://github.com/kaisellgren/QueryString.git
+```
 
 ## License
 This library is licensed under MIT.
