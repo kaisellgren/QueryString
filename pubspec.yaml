@@ -1,0 +1,8 @@
+name: query_string
+version: 1.0.0
+description: Query string parser. Turns those nasty query strings into Dart Maps.
+author: Kai Sellgren <kaisellgren@gmail.com>
+homepage: http://github.com/kaisellgren/QueryString
+dependencies:
+  unittest:
+    sdk: unittest
