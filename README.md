@@ -5,7 +5,7 @@ This is a query string parser. It turns those nasty query strings into Dart Maps
 
 ## Examples
 
-```
+```dart
 import 'package:query_string/query_string.dart';
 
 void main() {
@@ -22,7 +22,7 @@ void main() {
 
 Until ```pub``` is open to public submissions, you have to specify the path to this Git repository in your pubspec.yaml:
 
-```
+```yaml
 dependencies:
   query_string:
   	git: https://github.com/kaisellgren/QueryString.git
