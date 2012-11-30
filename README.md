@@ -6,7 +6,7 @@ This is a query string parser. It turns those nasty query strings into Dart Maps
 ## Examples
 
 ```
-import 'package:query_string/query_string.dart');
+import 'package:query_string/query_string.dart';
 
 void main() {
   var q = '?page=main&action=front&sid=h985jg9034gj498g859gh495&enc=+Hello%20&empty';
