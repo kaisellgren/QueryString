@@ -15,7 +15,7 @@ class QueryString {
    * Parses the given query string into a Map.
    */
   static Map parse(String query) {
-    const search = const RegExp('([^&=]+)=?([^&]*)');
+    final search = new RegExp('([^&=]+)=?([^&]*)');
     var result = new Map();
 
     // Get rid off the beginning ? in query strings.
