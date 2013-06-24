@@ -1,21 +1,11 @@
-/*!
- * QueryString
- *
- * Copyright (C) 2012, Kai Sellgren
- * Licensed under the MIT License.
- * http://www.opensource.org/licenses/mit-license.php
- */
-
 library query_string;
-
-import 'dart:uri';
 
 class QueryString {
   /**
    * Parses the given query string into a Map.
    */
   static Map parse(String query) {
-    final search = new RegExp('([^&=]+)=?([^&]*)');
+    var search = new RegExp('([^&=]+)=?([^&]*)');
     var result = new Map();
 
     // Get rid off the beginning ? in query strings.
@@ -23,7 +13,7 @@ class QueryString {
 
     // A custom decoder.
     decode(String s) {
-      return decodeUriComponent(s.replaceAll('+', ' '));
+      return Uri.decodeComponent(s.replaceAll('+', ' '));
     }
 
     // Go through all the matches and build the result map.
