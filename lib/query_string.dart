@@ -9,12 +9,10 @@ class QueryString {
     var result = new Map();
 
     // Get rid off the beginning ? in query strings.
-    query = query.substring(1);
+    if (query.startsWith('?')) query = query.substring(1);
 
     // A custom decoder.
-    decode(String s) {
-      return Uri.decodeComponent(s.replaceAll('+', ' '));
-    }
+    decode(String s) => Uri.decodeComponent(s.replaceAll('+', ' '));
 
     // Go through all the matches and build the result map.
     for (Match match in search.allMatches(query)) {
