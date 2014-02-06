@@ -5,5 +5,5 @@ author: Kai Sellgren <kaisellgren@gmail.com>
 homepage: http://github.com/kaisellgren/QueryString
 environment:
   sdk: '>=0.8.10+6 <2.0.0'
-dependencies:
+dev_dependencies:
   unittest: '>=0.9.0 < 0.10.0'
